@@ -4,13 +4,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="303.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin.Admin">
-   <children>
-      <Label layoutX="128.0" layoutY="60.0" prefHeight="19.0" prefWidth="74.0" text="List of Files">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-   </children>
+<AnchorPane prefHeight="303.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin.Admin">
+    <children>
+        <Label layoutX="117.0" layoutY="49.0" prefHeight="31.0" prefWidth="94.0" text="Admin Login" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="127.0" prefHeight="17.0" prefWidth="93.0" text="Enter Username " />
+        <Label layoutX="14.0" layoutY="182.0" text="Enter Password" />
+       
+        <TextField fx:id="AdminUser" layoutX="139.0" layoutY="123.0" />
+        <PasswordField fx:id="AdminPassword" layoutX="137.0" layoutY="178.0" />
+        <Button fx:id="AdminLoginButton" layoutX="138.0" layoutY="253.0" mnemonicParsing="false" onAction="#AdminLoginListener" text="Login !" />
+    </children>
 </AnchorPane>
