@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Upload">
+   <children>
+      <Button fx:id="singleFileBtn" layoutX="88.0" layoutY="67.0" mnemonicParsing="false" onAction="#selectSingleFile" prefHeight="26.0" prefWidth="174.0" text="Select Single FIle" />
+      <Button fx:id="multiFileBtn" layoutX="88.0" layoutY="121.0" mnemonicParsing="false" onAction="#selectMultiFile" prefHeight="26.0" prefWidth="174.0" text="Select Multiple Files" />
+      <ListView fx:id="fileView" layoutX="300.0" layoutY="14.0" prefHeight="335.0" prefWidth="273.0" />
+      <Button layoutX="300.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Upload" />
+      <Button fx:id="logout" layoutX="522.0" layoutY="348.0" mnemonicParsing="false" onAction="#logoutActionListener" text="Logout" />
+   </children>
+</AnchorPane>

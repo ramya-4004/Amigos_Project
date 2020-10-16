@@ -18,11 +18,11 @@ public class Login {
     public void loginListener(ActionEvent event) {
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Upload.fxml"));
             Parent root1 = fxmlLoader.load();
             Stage stage = (Stage)login.getScene().getWindow();
             stage.setTitle("User Page");
-            stage.setScene(new Scene(root1, 300, 400));
+            stage.setScene(new Scene(root1, 600, 450));
             stage.show();
         }
         catch (Exception e){
@@ -31,21 +31,6 @@ public class Login {
 
     }
 
-    public void logoutActionListener(ActionEvent event){
-        try {
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
-            Parent root2 = fxmlLoader.load();
-            Stage stage = (Stage)logout.getScene().getWindow();
-            Scene scene = new Scene(root2, 300, 300);
-            stage.setScene(scene);
-            stage.close();
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-
-    }
 
 
 }
