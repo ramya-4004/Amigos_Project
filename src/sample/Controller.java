@@ -25,6 +25,7 @@ public class Controller {
             e.printStackTrace();
         }
         stage.setScene(new Scene(root, 600,500));
+
     }
 
     public void adminListener(ActionEvent actionEvent){
