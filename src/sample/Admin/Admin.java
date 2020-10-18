@@ -1,21 +1,23 @@
 package sample.Admin;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.io.IOException;
 
 public class Admin {
     public Button AdminLoginButton;
     public TextField AdminPassword;
-    public  TextField AdminUser;
-    public void AdminLoginListener(ActionEvent actionEvent){
+    public TextField AdminUser;
 
-        Connection conn =null;
+    public void AdminLoginListener (ActionEvent actionEvent) {
+
+        /*Connection conn =null;
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con= DriverManager.getConnection("jdbc:mysql://localhost/Admin","root","9649726949");
@@ -30,8 +32,24 @@ public class Admin {
             }
             }
 
-            }
+            }*/
 
+
+        try {
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("adminlogin.fxml"));
+
+            Parent root1 = fxmlLoader.load();
+            Stage stage = (Stage) AdminLoginButton.getScene().getWindow();
+            //System.out.println(root1.toString());
+            stage.setScene(new Scene(root1, 600, 450));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+}
 
 
 

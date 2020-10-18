@@ -7,12 +7,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" exported="" name="lib1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.21.jar!/" />
+=======
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../mysql-connector-java-8.0.21/mysql-connector-java-8.0.21.jar!/" />
+>>>>>>> ddefb07084cd511a7a8ffd694de18b970251f243
         </CLASSES>
         <JAVADOC />
         <SOURCES />

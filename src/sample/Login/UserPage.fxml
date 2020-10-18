@@ -4,15 +4,25 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+<<<<<<< HEAD
 <AnchorPane accessibleRole="PASSWORD_FIELD" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Login">
+=======
+<AnchorPane accessibleRole="PASSWORD_FIELD" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Login">
+>>>>>>> ddefb07084cd511a7a8ffd694de18b970251f243
    <Text fontSmoothingType="LCD" layoutX="230.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="140.13671875">
       <font>
          <Font name="Georgia Bold Italic" size="27.0" />
       </font>
    </Text>
+<<<<<<< HEAD
    <TextField fx:id="ID" layoutX="227.0" layoutY="129.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter ID" />
    <PasswordField fx:id="password" layoutX="227.0" layoutY="187.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter password" />
    <Label layoutX="75.0" layoutY="134.0" prefHeight="18.0" prefWidth="97.0" text="ID">
+=======
+   <TextField fx:id="LoginUser" layoutX="227.0" layoutY="129.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter username" />
+   <PasswordField fx:id="LoginPassword" layoutX="227.0" layoutY="187.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter password" />
+   <Label layoutX="75.0" layoutY="134.0" prefHeight="18.0" prefWidth="97.0" text="Username">
+>>>>>>> ddefb07084cd511a7a8ffd694de18b970251f243
       <font>
          <Font name="Droid Sans" size="12.0" />
       </font>
