@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import javafx.stage.Stage;
+import sample.Login.Login;
 
 import java.io.IOException;
 import java.sql.SQLOutput;
@@ -17,6 +18,7 @@ public class Controller {
     public Button registerButton;
 
     public void clickListener(ActionEvent actionEvent){
+
         Stage stage = (Stage) loginButton.getScene().getWindow();
         Parent root = null;
         try {
@@ -25,6 +27,7 @@ public class Controller {
             e.printStackTrace();
         }
         stage.setScene(new Scene(root, 600,500));
+
     }
 
     public void adminListener(ActionEvent actionEvent){

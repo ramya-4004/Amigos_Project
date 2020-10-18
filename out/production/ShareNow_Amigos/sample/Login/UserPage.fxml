@@ -4,26 +4,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane accessibleRole="PASSWORD_FIELD" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Login">
-   <Text fontSmoothingType="LCD" layoutX="230.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome"
-         wrappingWidth="140.13671875">
+<AnchorPane accessibleRole="PASSWORD_FIELD" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Login">
+   <Text fontSmoothingType="LCD" layoutX="230.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="140.13671875">
       <font>
-         <Font name="Georgia Bold Italic" size="27.0"/>
+         <Font name="Georgia Bold Italic" size="27.0" />
       </font>
    </Text>
-   <TextField layoutX="227.0" layoutY="129.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter username"/>
-   <PasswordField layoutX="227.0" layoutY="187.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter password"/>
-   <Label layoutX="75.0" layoutY="134.0" prefHeight="18.0" prefWidth="97.0" text="Username">
+   <TextField fx:id="ID" layoutX="227.0" layoutY="129.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter ID" />
+   <PasswordField fx:id="password" layoutX="227.0" layoutY="187.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter password" />
+   <Label layoutX="75.0" layoutY="134.0" prefHeight="18.0" prefWidth="97.0" text="ID">
       <font>
-         <Font name="Droid Sans" size="12.0"/>
+         <Font name="Droid Sans" size="12.0" />
       </font>
    </Label>
    <Label layoutX="75.0" layoutY="191.0" prefHeight="18.0" prefWidth="89.0" text="Password">
       <font>
-         <Font name="Droid Sans Mono Dotted" size="12.0"/>
+         <Font name="Droid Sans Mono Dotted" size="12.0" />
       </font>
    </Label>
-   <Button fx:id="login" layoutX="227.0" layoutY="249.0" mnemonicParsing="false" onAction="#loginListener"
-           prefHeight="26.0" prefWidth="105.0" text="Login"/>
+   <Button fx:id="login" layoutX="227.0" layoutY="249.0" mnemonicParsing="false" onAction="#loginListener" prefHeight="26.0" prefWidth="105.0" text="Login" />
 </AnchorPane>

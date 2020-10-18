@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.Upload">
+   <ListView fx:id="fileBox" layoutX="45.0" layoutY="43.0" prefHeight="31.0" prefWidth="506.0"/>
+   <Button fx:id="choose" layoutX="45.0" layoutY="89.0" mnemonicParsing="false" onAction="#chooseClicked"
+           text="Choose File"/>
+   <Button fx:id="cancel" layoutX="148.0" layoutY="89.0" mnemonicParsing="false" onAction="#cancelClicked"
+           text="Cancel"/>
+   <Button fx:id="upload" layoutX="422.0" layoutY="89.0" mnemonicParsing="false" onAction="#uploadClicked"
+           prefHeight="26.0" prefWidth="129.0" text="Upload"/>
+</AnchorPane>
